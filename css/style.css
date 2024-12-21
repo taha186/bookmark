@@ -1,0 +1,86 @@
+:root {
+    --main-color: #1e1e1e;
+    --secondary-color: #4e4e4e;
+    --primary-color: #0078ff;
+
+}
+
+/* * START BASE STYLE */
+
+html {
+    scroll-padding-top: 50px;
+}
+
+body {
+    background-color: #f7ecde;
+}
+
+/* * START GLOBAL STYLE */
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+    letter-spacing: 0.0313rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* *interface style */
+
+#interface {
+
+    .title h1 {
+        font-size: 3.125rem;
+        color: #352e28;
+        font-family: "Pacifico", cursive;
+        isolation: isolate;
+        position: relative;
+        display: inline-block;
+    }
+
+    .title h1::before{
+        content: "";
+        position: absolute;
+        background-color: #fec260;
+        width: 100%;
+        height: 33%;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.3s;
+    }
+    .title h1:hover::before{
+        height: 70%;
+    }
+
+    .title {
+        border-bottom: #4e4e4e dashed 1px;
+    }
+
+    h2 {
+        display: inline;
+        font-family: "Righteous", sans-serif;
+        font-size: 25px;
+        background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .form-control:focus {
+        color: #212529;
+        background-color: #fff;
+        border-color: #d99c39;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem #fec26055;
+    }
+    .btn-sub{
+        border-bottom: #4e4e4e dashed 1px;
+    }
+    .btn-custom{
+        background-color: #9eb23b;
+        color: white;
+    }
+}

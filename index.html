@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ?======>   link google font  <====== -->
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <!-- ?======>   link bootstrap  <====== -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- ?======>   link font-awesome  <====== -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- ?======>   main style sheet  <======= -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- ?======>   media style sheet  <======= -->
+  <link rel="stylesheet" href="css/media.css">
+  <title>Bookmark</title>
+</head>
+
+<body>
+
+  <main>
+    <section id="interface" class="pt-5">
+
+      <div class="container px-0 px-md-4">
+        <div class="title text-center py-5 ">
+          <h1 class="">Bookmarker</h1>
+        </div>
+        <div class="text-center py-4 ">
+          <h2> <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i>
+          </h2>
+        </div>
+        <div class="inner px-2 px-md-0">
+          <div class="form-group mb-3">
+            <label for="bookMarkName" class="fw-semibold pb-2"><i class="fa-solid fa-book-bookmark"></i> Site
+              Name</label>
+            <input class="form-control" type="text" oninput="isvalidate(this)" id="bookMarkName" name="bookMarkName"
+              placeholder="Bookmark Name">
+            <div class="alert alert-danger d-none p-1 mt-1">
+              <small>
+                incorrect Name at least 3 letters
+              </small>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="bookMarkURL" class="fw-semibold pb-2"><i class="fa-solid fa-link pe-2"></i> Site URL</label>
+            <input class="form-control" type="text" oninput="isvalidate(this)" id="bookMarkURL" name="bookMarkURL"
+              placeholder="Website URL">
+            <div class="alert alert-danger d-none p-1 mt-1">
+              <small>
+                incorrect URL
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="btn-sub text-center py-4">
+          <button class="btn btn-danger px-5" id="submitBtn">Submit</button>
+        </div>
+
+        <table class="table mt-4 text-center bg-light">
+          <thead>
+            <tr>
+              <th class="text-capitalize">index</th>
+              <th class="text-capitalize">Website Name</th>
+              <th class="text-capitalize">Visit</th>
+              <th class="text-capitalize">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tableContent">
+
+          </tbody>
+        </table>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ?link bootstrap.js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- ?link script.js -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
